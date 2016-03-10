@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<metalib name="configdata" version="1">
+
+    <struct name="Phone" desc="电话号码" >
+        <entry name="familynumber"  type="int64"  option="optional" cname="家庭号码" desc="家庭号码" />
+        <entry name="commanynumber" type="int64"  option="optional" cname="公司号码" desc="公司号码" />
+    </struct>
+
+    <struct name="School"  desc="学校" >
+        <entry name="schoolname"  type="string"  option="optional"  cname="学校名称"  desc="学校名称" />
+        <entry name="schooladdr"  type="string"  option="optional"  cname="学校地址"  desc="学校地址" />
+    </struct>
+
+    <struct name="Person"  desc="个人" >
+        <entry name="name"  type="bytes"  option="optional" cname="名字"  desc="名字" />
+        <entry name="age"   type="int32"   option="optional" cname="年龄"  desc="年龄" />
+        <entry name="height"  type="float"  option="optional"  cname="身高"  desc="身高" />
+        <entry name="phone"  type="Phone"  option="optional" cname="[电话]" desc="电话" />
+        <entry name="school"  type="School"  option="repeated"  cname="[学校]"  desc="学校" />
+    </struct>
+
+
+
+</metalib>
